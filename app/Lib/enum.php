@@ -32,6 +32,8 @@ class ActionEnum
   const AuthenticatorDeleted            = 'DAUT';
   const AuthenticatorEdited             = 'EAUT';
   const AuthenticatorStatusEdited       = 'EATS';
+  const ClusterAccountAutoCreated       = 'ACAA';
+  const ClusterAccountAutoEdited        = 'ECAA';
   const CoEmailListAdded                = 'ACEL';
   const CoEmailListDeleted              = 'DCEL';
   const CoEmailListEdited               = 'ECEL';
@@ -307,6 +309,7 @@ class IdentifierEnum
   const ePPN               = 'eppn';
   const ePTID              = 'eptid';
   const ePUID              = 'epuid';
+  const GID                = 'gid';
   const Mail               = 'mail';
   const National           = 'national';
   const Network            = 'network';
@@ -465,6 +468,7 @@ class PetitionActionEnum
 {
   const Approved                = 'PY';
   const AttributesUpdated       = 'AU';
+  const ClusterAccountAutoCreated = 'CA';
   const CommentAdded            = 'CM';
   const Created                 = 'PC';
   const Declined                = 'PX';

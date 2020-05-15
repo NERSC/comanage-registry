@@ -155,6 +155,12 @@ class CoServicesController extends StandardController {
       $args['order'] = array('Authenticator.description ASC');
       
       $this->set('vv_authenticators', $this->Co->Authenticator->find("list", $args));
+      // and Clusters
+      $args = array();
+      $args['conditions']['Cluster.co_id'] = $this->cur_co['Co']['id'];
+      $args['order'] = array('Cluster.description ASC');
+
+      $this->set('vv_clusters', $this->Co->Cluster->find("list", $args));
     }
     
     parent::beforeRender();
